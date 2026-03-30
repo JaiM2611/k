@@ -1,0 +1,46 @@
+{
+  "points_table": [
+    {
+      "team": "MI",
+      "played": 5,
+      "won": 4,
+      "lost": 1,
+      "nrr": "+1.200",
+      "points": 8
+    }
+  ],
+  "player_stats": [
+    {
+      "name": "Virat Kohli",
+      "team": "RCB",
+      "runs": 320,
+      "wickets": 0,
+      "matches": 5
+    }
+  ],
+  "injury_news": [
+    {
+      "player": "MS Dhoni",
+      "team": "CSK",
+      "injury": "Calf strain",
+      "status": "Doubtful"
+    }
+  ],
+  "pitch_report": {
+    "venue": "Barsapara",
+    "city": "Guwahati",
+    "pitch_type": "Batting",
+    "avg_first_innings_score": 185,
+    "dew_factor": "High",
+    "notes": "Good batting"
+  },
+  "todays_match": {
+    "team1": "RR",
+    "team2": "CSK",
+    "venue": "Barsapara Cricket Stadium, Guwahati",
+    "time_ist": "7:30 PM IST",
+    "status": "Upcoming",
+    "score": ""
+  },
+  "last_updated": "2026-03-30T10:43:19.170852+00:00"
+}
