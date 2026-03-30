@@ -27,7 +27,7 @@ from google.genai import types
 # Set your Gemini API key via the environment variable GEMINI_API_KEY.
 # Example (Linux/Mac):  export GEMINI_API_KEY="your-key-here"
 # Example (Windows):    set GEMINI_API_KEY=your-key-here
-API_KEY = os.environ.get("AIzaSyBNX9Z9uhzKjvxBOckg-SBFw8yzS0aWlvg", "")
+API_KEY = os.environ.get("GEMINI_API_KEY", "")
 
 # Path where all fetched data will be stored.
 JSON_FILE = os.path.join(os.path.dirname(__file__), "ipl_master_data.json")
@@ -86,6 +86,20 @@ return it as a single, valid JSON object with EXACTLY this structure
     "time_ist": "HH:MM AM/PM IST",
     "status": "Upcoming / Live / Completed",
     "score": ""
+  }},
+  "match_prediction": {{
+    "predicted_winner": "Team abbreviation",
+    "win_probability": {{
+      "team1": 0,
+      "team2": 0
+    }},
+    "key_factors": [
+      "Factor 1",
+      "Factor 2",
+      "Factor 3"
+    ],
+    "predicted_top_performer": "Player Name",
+    "confidence": "High / Medium / Low"
   }}
 }}
 
@@ -95,6 +109,7 @@ Rules:
 - Include the latest injury updates for players (include MS Dhoni, Ajinkya Rahane, and any others found).
 - Pitch report should be for today's match venue as found via search.
 - Populate todays_match with the actual match scheduled for today per the IPL 2026 fixtures.
+- For match_prediction: analyse current form, head-to-head stats, pitch conditions, and injury news to predict today's match outcome. win_probability values must sum to 100.
 - Return ONLY the raw JSON. No explanations, no markdown.
 """
 
@@ -202,6 +217,7 @@ def load_from_json() -> dict:
         "injury_news": [],
         "pitch_report": {},
         "todays_match": {},
+        "match_prediction": {},
     }
 
     if not os.path.exists(JSON_FILE):

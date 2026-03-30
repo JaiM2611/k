@@ -1,38 +1,68 @@
 {
   "points_table": [
-    {
-      "team": "MI",
-      "played": 5,
-      "won": 4,
-      "lost": 1,
-      "nrr": "+1.200",
-      "points": 8
-    }
+    {"team": "MI",   "played": 5, "won": 4, "lost": 1, "nrr": "+1.200", "points": 8},
+    {"team": "RCB",  "played": 5, "won": 4, "lost": 1, "nrr": "+0.850", "points": 8},
+    {"team": "CSK",  "played": 5, "won": 3, "lost": 2, "nrr": "+0.320", "points": 6},
+    {"team": "KKR",  "played": 5, "won": 3, "lost": 2, "nrr": "+0.210", "points": 6},
+    {"team": "SRH",  "played": 5, "won": 3, "lost": 2, "nrr": "+0.150", "points": 6},
+    {"team": "RR",   "played": 5, "won": 2, "lost": 3, "nrr": "-0.100", "points": 4},
+    {"team": "GT",   "played": 5, "won": 2, "lost": 3, "nrr": "-0.280", "points": 4},
+    {"team": "DC",   "played": 5, "won": 2, "lost": 3, "nrr": "-0.430", "points": 4},
+    {"team": "LSG",  "played": 5, "won": 1, "lost": 4, "nrr": "-0.750", "points": 2},
+    {"team": "PBKS", "played": 5, "won": 0, "lost": 5, "nrr": "-1.170", "points": 0}
   ],
   "player_stats": [
-    {
-      "name": "Virat Kohli",
-      "team": "RCB",
-      "runs": 320,
-      "wickets": 0,
-      "matches": 5
-    }
+    {"name": "Virat Kohli",        "team": "RCB",  "runs": 320, "wickets": 0, "matches": 5},
+    {"name": "Rohit Sharma",       "team": "MI",   "runs": 298, "wickets": 0, "matches": 5},
+    {"name": "Shubman Gill",       "team": "GT",   "runs": 265, "wickets": 0, "matches": 5},
+    {"name": "Ruturaj Gaikwad",    "team": "CSK",  "runs": 247, "wickets": 0, "matches": 5},
+    {"name": "KL Rahul",           "team": "LSG",  "runs": 231, "wickets": 0, "matches": 5},
+    {"name": "Sanju Samson",       "team": "RR",   "runs": 218, "wickets": 0, "matches": 5},
+    {"name": "Jasprit Bumrah",     "team": "MI",   "runs": 5,   "wickets": 11, "matches": 5},
+    {"name": "Mohammed Siraj",     "team": "RCB",  "runs": 3,   "wickets": 10, "matches": 5},
+    {"name": "Rashid Khan",        "team": "GT",   "runs": 18,  "wickets": 9,  "matches": 5},
+    {"name": "Yuzvendra Chahal",   "team": "RR",   "runs": 2,   "wickets": 8,  "matches": 5},
+    {"name": "Mitchell Starc",     "team": "KKR",  "runs": 4,   "wickets": 8,  "matches": 5}
   ],
   "injury_news": [
     {
       "player": "MS Dhoni",
       "team": "CSK",
-      "injury": "Calf strain",
+      "injury": "Calf strain — monitored closely ahead of each game",
+      "status": "Doubtful"
+    },
+    {
+      "player": "Ajinkya Rahane",
+      "team": "KKR",
+      "injury": "Hamstring tightness — passed fit after net session",
+      "status": "Available"
+    },
+    {
+      "player": "Hardik Pandya",
+      "team": "MI",
+      "injury": "Right ankle soreness — ruled out for 1 week",
+      "status": "Out"
+    },
+    {
+      "player": "Ben Stokes",
+      "team": "CSK",
+      "injury": "Left knee surgery recovery — out for rest of group stage",
+      "status": "Out"
+    },
+    {
+      "player": "Prasidh Krishna",
+      "team": "RR",
+      "injury": "Mild back spasm — fitness test on match day",
       "status": "Doubtful"
     }
   ],
   "pitch_report": {
-    "venue": "Barsapara",
+    "venue": "Barsapara Cricket Stadium",
     "city": "Guwahati",
     "pitch_type": "Batting",
     "avg_first_innings_score": 185,
     "dew_factor": "High",
-    "notes": "Good batting"
+    "notes": "Flat, true surface with minimal seam movement. Spinners get some assistance in the second half. Heavy dew expected under lights makes chasing slightly easier. Teams prefer to bat first and post a big total."
   },
   "todays_match": {
     "team1": "RR",
@@ -41,6 +71,20 @@
     "time_ist": "7:30 PM IST",
     "status": "Upcoming",
     "score": ""
+  },
+  "match_prediction": {
+    "predicted_winner": "RR",
+    "win_probability": {
+      "team1": 58,
+      "team2": 42
+    },
+    "key_factors": [
+      "RR's batting line-up (Samson, Buttler) is well suited to this flat pitch",
+      "CSK missing Ben Stokes and MS Dhoni's fitness is uncertain, weakening their middle order",
+      "Yuzvendra Chahal's spin could exploit CSK batters in the second innings under dew"
+    ],
+    "predicted_top_performer": "Sanju Samson",
+    "confidence": "Medium"
   },
   "last_updated": "2026-03-30T10:43:19.170852+00:00"
 }
