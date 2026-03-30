@@ -27,7 +27,7 @@ from google.genai import types
 # Set your Gemini API key via the environment variable GEMINI_API_KEY.
 # Example (Linux/Mac):  export GEMINI_API_KEY="your-key-here"
 # Example (Windows):    set GEMINI_API_KEY=your-key-here
-API_KEY = os.environ.get("GEMINI_API_KEY", "")
+API_KEY = os.environ.get("AIzaSyBNX9Z9uhzKjvxBOckg-SBFw8yzS0aWlvg", "")
 
 # Path where all fetched data will be stored.
 JSON_FILE = os.path.join(os.path.dirname(__file__), "ipl_master_data.json")
